@@ -30,9 +30,9 @@ class MemberResource extends Resource
             ->schema([
                 TextInput::make('name')->placeholder('Name')->required(),
                 TextInput::make('designation')->placeholder('Designation')->required(),
-                TextInput::make('fb_url')->label('Facebook URL')->placeholder('Facebook URL'),
-                TextInput::make('insta_url')->label('Instagram URL')->placeholder('Instagram URL'),
-                TextInput::make('twitter_url')->label('Twitter URL')->placeholder('Twitter URL'),
+                TextInput::make('fb_url')->url()->label('Facebook URL')->placeholder('Facebook URL'),
+                TextInput::make('insta_url')->url()->label('Instagram URL')->placeholder('Instagram URL'),
+                TextInput::make('twitter_url')->url()->label('Twitter URL')->placeholder('Twitter URL'),
                 Select::make('status')->options([
                     1 => "Active",
                     2 => "Block"
