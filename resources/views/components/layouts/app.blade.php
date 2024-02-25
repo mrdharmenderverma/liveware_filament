@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item"> <a class="nav-link" href="{{route('home')}}" wire:navigate>Home</a></li>
-                        <li class="nav-item "> <a class="nav-link" href="about.html" wire:navigate>About Us</a></li>
+                        <li class="nav-item "> <a class="nav-link" href="{{route('aboutPage')}}" wire:navigate>About Us</a></li>
                         <li class="nav-item "> <a class="nav-link" href="{{route('servicePage')}}" wire:navigate>Services</a></li>
                         <li class="nav-item "> <a class="nav-link" href="{{route('teamPage')}}" wire:navigate>Our Team</a></li>
                         <li class="nav-item "><a class="nav-link " href="{{route('blogPage')}}" wire:navigate>Blog</a></li>
