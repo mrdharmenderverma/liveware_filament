@@ -32,7 +32,7 @@ class PageResource extends Resource
                 Select::make('status')->options([
                     1 => "Active",
                     0 => "Block"
-                ]),
+                ])->required(),
                 RichEditor::make('content')->columnSpan(2),
                 FileUpload::make('image')->columnSpan(2),
                 

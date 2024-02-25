@@ -49,7 +49,7 @@
                         <li class="nav-item "><a class="nav-link " href="{{route('blogPage')}}" wire:navigate>Blog</a></li>
                         <li class="nav-item "><a class="nav-link " href="faq.html" wire:navigate>FAQ</a></li>
                     </ul>
-                    <a href="#!" class="btn btn-outline-primary">Contact Us</a>
+                    <a wire:navigate href="{{route("contactPage")}}" class="btn btn-outline-primary">Contact Us</a>
                 </div>
             </div>
         </nav>
@@ -82,13 +82,13 @@
                     <div class="footer-widget">
                         <h5 class="mb-4 text-primary font-secondary">Quick Links</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#!">About Us</a>
+                            <li class="mb-2"><a wire:navigate href="#!">About Us</a>
                             </li>
-                            <li class="mb-2"><a href="#!">Contact Us</a>
+                            <li class="mb-2"><a wire:navigate href="{{route("contactPage")}}">Contact Us</a>
                             </li>
-                            <li class="mb-2"><a href="#!">Blog</a>
+                            <li class="mb-2"><a wire:navigate href="{{route('blogPage')}}">Blog</a>
                             </li>
-                            <li class="mb-2"><a href="#!">Team</a>
+                            <li class="mb-2"><a wire:navigate href="{{route('teamPage')}}">Team</a>
                             </li>
                         </ul>
                     </div>

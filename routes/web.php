@@ -2,6 +2,7 @@
 
 use App\Livewire\BlogDetail;
 use App\Livewire\ShowBlogPage;
+use App\Livewire\ShowContactPage;
 use App\Livewire\ShowHome;
 use App\Livewire\ShowService;
 use App\Livewire\ShowServicePage;
@@ -29,3 +30,5 @@ Route::get('/service/{id}', ShowService::class)->name('serviceDetailPage');
 Route::get('/team', ShowTeamPage::class)->name('teamPage');
 Route::get('/blogs', ShowBlogPage::class)->name('blogPage');
 Route::get('/blogs/{id}', BlogDetail::class)->name('blogDetail');
+Route::get('/about', ShowBlogPage::class)->name('aboutPage');
+Route::get('/contact', ShowContactPage::class)->name('contactPage');
