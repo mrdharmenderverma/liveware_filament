@@ -134,7 +134,7 @@
                                         </a>
                                         <div class="flex-grow-1">
                                             <h5 class="h6 mb-0"><a wire:navigate class="text-black"
-                                                    href="blog-details.html">{{ $latestBlog->title }}</a></h5>
+                                                    href="{{route('blogDetail',$latestBlog->id)}}">{{ $latestBlog->title }}</a></h5>
                                             <small>{{ \Carbon\Carbon::parse($latestBlog->created_at)->format('d M, Y') }}</small>
                                         </div>
                                     </li>

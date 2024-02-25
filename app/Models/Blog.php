@@ -17,4 +17,9 @@ class Blog extends Model
         'content',
         'status'
     ];
+
+
+    public function category(){
+        return $this->belongsTo(Category::class);
+    }
 }
